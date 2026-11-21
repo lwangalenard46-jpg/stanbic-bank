@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F4F6F9;
+    color: #222;
+}
+
+/* Header and Navigation */
+header {
+    background: #002D62;
+    color: white;
+    padding: 20px 35px;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C9A63A;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 45, 98, 0.75);
+    padding: 25px;
+    width: 80%;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+.container {
+    width: 90%;
+    margin: 35px auto;
+}
+
+.section-title {
+    color: #002D62;
+    margin: 30px 0 20px;
+}
+
+/* Loan Product Cards */
+.loan-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.loan-card {
+    flex: 1;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+.loan-card h3 {
+    color: #002D62;
+    margin-bottom: 15px;
+}
+
+.loan-card p {
+    margin-bottom: 25px;
+}
+
+.apply-button {
+    display: inline-block;
+    background: #002D62;
+    color: #C9A63A;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.apply-button:hover {
+    background: #001B3D;
+}
+
+/* Comparison Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background: #002D62;
+    color: white;
+}
+
+.disclaimer {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Application Form */
+.form-container {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 30px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    color: #002D62;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid #C9A63A;
+    border-color: #002D62;
+}
+
+.declaration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.declaration input {
+    width: 17px;
+    height: 17px;
+}
+
+.declaration label {
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #002D62;
+    color: #C9A63A;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #001B3D;
+}
+
+/* Footer */
+footer {
+    background: #002D62;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .loan-cards {
+        flex-direction: column;
+    }
+
+    .hero-text h2 {
+        font-size: 22px;
+    }
+
+    header {
+        padding: 18px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 12px 0 0;
+    }
+
+    .form-container {
+        width: 92%;
+        padding: 20px;
+    }
+}
